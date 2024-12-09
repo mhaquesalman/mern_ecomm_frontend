@@ -36,6 +36,6 @@ export const getCoupons = () => {
     return axios.get(`${API}/coupon`)
 }
 
-export const checkValidCoupon = code => {
+export const checkValidCoupon = (code) => {
     return axios.get(`${API}/coupon/code?c=${code}`)
 }
